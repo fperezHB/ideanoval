@@ -95,4 +95,9 @@ h3 {
 p {
 	text-align: justify;
 }
+
+.listflo ul, .listflo li{
+	display: inline;
+	font-weight: bold;
+	padding: 10px;
 }
