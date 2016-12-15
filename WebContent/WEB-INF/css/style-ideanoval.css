@@ -1,20 +1,6 @@
 @CHARSET "ISO-8859-1";
 
 /*
-
-
-
-    font-family: 'Kanit', sans-serif;
-
-    font-family: 'Patrick Hand', cursive;
-
-
-
-    font-family: 'Acme', sans-serif;
-
-*/
-
-/*
 div {
 	border: 1px solid black;
 }
@@ -30,20 +16,47 @@ article {
 	border-radius: 8px;
 	box-shadow: 5px 3px 3px #81b3fe;
 	background-color: white;
-	display: flex; /* contexte sur le parent */
 }
 
-.center-pic {
-	
+article .btn {
+	box-shadow: 1px 1px 1px #001637;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+article .btn:hover {
+	color: yellow;
+}
+
+article .glyphicon {
+	color: #009dfe;
+	font-size: 30px;
+}
+
+article .comment {
+	color: #009dfe;
+	font-size: 20px;
+}
+
+article .stats {
+	margin: 0;
+}
+
+article .progress-bar {
+	margin: auto;
+}
+
+.vcenter {
+    display: flex;
+    vertical-align: middle;
+    float: none;
 }
 
 .home-ideapic {
-	max-height: 100%;
-	max-width: 100%;
-	object-fit: contain;
 	padding: 2px;
-	margin: auto;
-	border: 1px solid black;
+	border-radius: 8px;
+	padding: 2px;
+	line-height:100%;
 }
 
 aside {
@@ -53,6 +66,10 @@ aside {
 	border-radius: 8px;
 	box-shadow: 3px 1px 1px #81b3fe;
 	background-color: #fef5d6;
+}
+
+.home-toppic {
+	width: 100%;
 }
 
 h1 {
