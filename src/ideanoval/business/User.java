@@ -9,6 +9,14 @@ public class User {
 	private LocalDate dateAddUser;
 	private LocalDate dateEditUser;
 	private LocalDate dateDelUser;
+	private boolean isActive = true;
+	
+	public boolean isActive() {
+		return isActive;
+	}
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
 	public String getLoginUser() {
 		return loginUser;
 	}
@@ -39,16 +47,23 @@ public class User {
 	public void setDateDelUser(LocalDate dateDelUser) {
 		this.dateDelUser = dateDelUser;
 	}
+	
 	@Override
 	public String toString() {
 		return "User [loginUser=" + loginUser + ", pwdUser=" + pwdUser + ", dateAddUser=" + dateAddUser
-				+ ", dateEditUser=" + dateEditUser + ", dateDelUser=" + dateDelUser + "]";
+				+ ", dateEditUser=" + dateEditUser + ", dateDelUser=" + dateDelUser + ", isActive=" + isActive + "]";
 	}
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-
+	public User(String loginUser, String pwdUser, LocalDate dateAddUser, LocalDate dateEditUser,
+			LocalDate dateDelUser) {
+		super();
+		this.loginUser = loginUser;
+		this.pwdUser = pwdUser;
+		this.dateAddUser = dateAddUser;
+		this.dateEditUser = dateEditUser;
+		this.dateDelUser = dateDelUser;
+	}
 }

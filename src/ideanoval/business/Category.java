@@ -4,6 +4,7 @@ public class Category {
 	
 	private String nameCat;
 	private String descCat;
+	
 	public String getNameCat() {
 		return nameCat;
 	}
@@ -24,7 +25,4 @@ public class Category {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-
 }
